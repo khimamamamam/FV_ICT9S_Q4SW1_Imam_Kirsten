@@ -52,128 +52,119 @@
             }
         }
 
-/* LOGIN BOX - GOLD GLOW PULSE */
-.login-box {
-    background: rgba(255, 223, 120, 0.12);
-    backdrop-filter: blur(20px);
-    border-radius: 25px;
-    padding: 45px 35px;
-    width: 360px;
-    margin: auto;
-    margin-top: 70px;
-    border: 1px solid rgba(255, 223, 120, 0.4);
 
-    animation: glowPulse 3s ease-in-out infinite;
-}
+        .login-box {
+            background: rgba(255, 223, 120, 0.12);
+            backdrop-filter: blur(20px);
+            border-radius: 25px;
+            padding: 45px 35px;
+            width: 360px;
+            margin: auto;
+            margin-top: 70px;
+            border: 1px solid rgba(255, 223, 120, 0.4);
 
-/* ✨ PULSATING GOLD GLOW */
-@keyframes glowPulse {
-    0% {
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.3),
-                    0 0 40px rgba(255, 215, 0, 0.2);
-    }
-    50% {
-        box-shadow: 0 0 40px rgba(255, 223, 120, 0.7),
-                    0 0 80px rgba(255, 215, 0, 0.5);
-    }
-    100% {
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.3),
-                    0 0 40px rgba(255, 215, 0, 0.2);
-    }
-}
+            animation: glowPulse 3s ease-in-out infinite;
+        }
 
-/* MAIN TITLE */
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    letter-spacing: 3px;
-    color: #fff3c4;
-    text-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
-}
 
-/* GOLD LINE */
-h1::after {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 2px;
-    background: linear-gradient(to right, #ffd700, #fff3c4);
-    margin: 12px auto 0;
-}
+        @keyframes glowPulse {
+            0% {
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.3),
+                            0 0 40px rgba(255, 215, 0, 0.2);
+            }
+            50% {
+                box-shadow: 0 0 40px rgba(255, 223, 120, 0.7),
+                            0 0 80px rgba(255, 215, 0, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.3),
+                            0 0 40px rgba(255, 215, 0, 0.2);
+            }
+        }
 
-/* SUBHEADINGS */
-h2 {
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: #ffe8a3;
-    text-transform: uppercase;
-}
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            letter-spacing: 3px;
+            color: #fff3c4;
+            text-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+        }
 
-/* INPUTS - GOLD GLASS */
-.form-control {
-    border-radius: 30px;
-    background: rgba(255, 223, 120, 0.2);
-    border: 1px solid rgba(255, 223, 120, 0.3);
-    color: #fff8dc;
-    padding: 10px 15px;
-}
+        h1::after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 2px;
+            background: linear-gradient(to right, #ffd700, #fff3c4);
+            margin: 12px auto 0;
+        }
 
-.form-control::placeholder {
-    color: #fff3c4;
-}
+        h2 {
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: #ffe8a3;
+            text-transform: uppercase;
+        }
 
-/* BUTTON - GOLD GRADIENT */
-.btn-elegant {
-    background: linear-gradient(135deg, #ffd700, #ffcc33);
-    border: none;
-    color: #5a4500;
-    border-radius: 30px;
-    padding: 8px 25px;
-    transition: all 0.3s ease;
-}
+        .form-control {
+            border-radius: 30px;
+            background: rgba(255, 223, 120, 0.2);
+            border: 1px solid rgba(255, 223, 120, 0.3);
+            color: #fff8dc;
+            padding: 10px 15px;
+        }
 
-/* ✨ HOVER GLOW + SCALE */
-.btn-elegant:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8),
-                0 0 30px rgba(255, 223, 120, 0.6);
-    background: linear-gradient(135deg, #fff3c4, #ffd700);
-}
+        .form-control::placeholder {
+            color: #fff3c4;
+        }
 
-/* SECOND BUTTON */
-.btn-secondary {
-    border-radius: 30px;
-    background: rgba(255, 223, 120, 0.25);
-    border: none;
-    color: #fff3c4;
-}
+        .btn-elegant {
+            background: linear-gradient(135deg, #ffd700, #ffcc33);
+            border: none;
+            color: #5a4500;
+            border-radius: 30px;
+            padding: 8px 25px;
+            transition: all 0.3s ease;
+        }
 
-/* CHECKBOX TEXT */
-.toggle-box {
-    margin-top: 10px;
-    font-size: 13px;
-    color: #fff3c4;
-}
+        .btn-elegant:hover {
+            transition: all 0.3 ease;
+            transform: scale(1.08);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.8),
+                        0 0 30px rgba(255, 223, 120, 0.6);
+            background: linear-gradient(135deg, #fff3c4, #ffd700);
+        }
 
-/* INSTRUCTIONS */
-#instructions {
-    background: rgba(255, 223, 120, 0.15);
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 13px;
-    border: 1px solid rgba(255, 223, 120, 0.4);
-    color: #fff8dc;
-}
+        .btn-secondary {
+            border-radius: 30px;
+            background: rgba(255, 223, 120, 0.25);
+            border: none;
+            color: #fff3c4;
+        }
 
-/* LINK */
-a {
-    color: #ffd700;
-    text-decoration: none;
-}
+        .toggle-box {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #fff3c4;
+        }
 
-a:hover {
-    text-decoration: underline;
-}
+        #instructions {
+            background: rgba(255, 223, 120, 0.15);
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            border: 1px solid rgba(255, 223, 120, 0.4);
+            color: #fff8dc;
+        }
+
+        a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
 
         h1::after {
             content: "";
