@@ -53,41 +53,104 @@
         }
 
         .login-box {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            width: 350px;
-            margin: auto;
-            margin-top: 80px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-        }
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    border-radius: 25px;
+    padding: 45px 35px;
+    width: 360px;
+    margin: auto;
+    margin-top: 70px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+/* MAIN TITLE */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    letter-spacing: 2px;
+    color: #f5e6c8;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
 
-        .btn-elegant {
-            background: #c8a97e;
-            border: none;
-            color: white;
-        }
+/* SUBHEADINGS */
+h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #e6d3a3;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
 
-        .btn-elegant:hover {
-            background: #a88c64;
-        }
+/* INPUTS */
+.form-control {
+    border-radius: 30px;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+}
 
-        .form-control {
-            border-radius: 20px;
-        }
+.form-control::placeholder {
+    color: #ddd;
+}
 
-        .toggle-box {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #ddd;
-        }
+/* BUTTON */
+.btn-elegant {
+    background: linear-gradient(135deg, #d4af37, #b8962e);
+    border: none;
+    color: white;
+    border-radius: 30px;
+    padding: 8px 25px;
+    transition: 0.3s;
+}
+
+.btn-elegant:hover {
+    background: linear-gradient(135deg, #f5d76e, #c9a93d);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+/* SECOND BUTTON */
+.btn-secondary {
+    border-radius: 30px;
+}
+
+/* CHECKBOX TEXT */
+.toggle-box {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #f1e4c3;
+}
+
+/* INSTRUCTIONS */
+#instructions {
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* LINK */
+a {
+    color: #f5d76e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* EXTRA: GOLD LINE UNDER TITLE */
+h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: gold;
+    margin: 10px auto 0;
+    opacity: 0.7;
+}
     </style>
 </head>
 
