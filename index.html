@@ -107,21 +107,16 @@
             text-transform: uppercase;
         }
 
-        .form-control:focus,
-        .form-control:active {
-            background: rgba(255, 223, 120, 0.2) !important;
-            color: #fff8dc !important;
-            border: 1px solid rgba(255, 223, 120, 0.6);
-            box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+        .form-control {
+            border-radius: 30px;
+            background: rgba(255, 223, 120, 0.2);
+            border: 1px solid rgba(255, 223, 120, 0.3);
+            color: #fff8dc;
+            padding: 10px 15px;
         }
 
-        .form-control:hover {
-            box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
-        }
-
-        input:-webkit-autofill {
-            -webkit-box-shadow: 0 0 0 1000px rgba(255, 223, 120, 0.2) inset !important;
-            -webkit-text-fill-color: #fff8dc !important;
+        .form-control::placeholder {
+            color: #fff3c4;
         }
 
         .btn-elegant {
