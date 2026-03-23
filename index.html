@@ -190,6 +190,16 @@
             box-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
             background: linear-gradient(135deg, #fff3c4, #ffd700);
         }
+
+        kbd {
+            background: linear-gradient(135deg, #ffd700, #ffcc33);
+            color: #5a4500;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            box-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+        }
+
     </style>
 </head>
 
@@ -243,7 +253,7 @@
 
             switch(variable_name) {
                 case true:
-                    document.getElementById("checkboxMessage").innerHTML = "You will stay logged in.";
+                    document.getElementById("checkboxMessage").innerHTML = "<kbd>You will stay logged in</kbd>";
                 break;
 
                 case false:
